@@ -10,8 +10,7 @@ are the averaged KMeans clusters.
 ![clusters](graphics/clusters.png)
 
 The next image is a comparison of SVR's with identical parameters fitted to the original and augmented datasets. This
-is an incredibly contrived example, but it shows how clustering and averaging the data can lead to a smoother, 
-more representative fit. 
+is a contrived example, but it shows how clustering and averaging the data can lead to a more representative fit. 
 
 ![comparison](graphics/base_vs_augmented.png)
 
