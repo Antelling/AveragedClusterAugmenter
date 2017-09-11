@@ -43,7 +43,7 @@ def _average_clusters(clusterer, X, Y, percentage, return_old):
 
         if return_old:
             return np.concatenate([X, new_x]), np.concatenate([Y, new_y])
-        return new_x, new_y
+        return (np.array(new_x), np.array(new_y))
 
 
 class ACATransformer(BaseEstimator, TransformerMixin):
