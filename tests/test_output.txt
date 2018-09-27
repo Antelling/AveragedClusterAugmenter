@@ -1,0 +1,170 @@
+With Boston dataset: 
+
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-87.2314558184986
+--------------------------------------60.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.76289242379772
+--------------------------------------60.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.86992362660047
+--------------------------------------60.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7f61ee96f620>)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.76952698098215
+--------------------------------------60.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.76952698098215
+--------------------------------------70.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-85.22590440132022
+--------------------------------------70.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.51537497405116
+--------------------------------------70.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7f61ee96f620>)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.5956845948415
+--------------------------------------70.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.5956845948415
+--------------------------------------80.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.27592663596147
+--------------------------------------80.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.92492674993497
+--------------------------------------80.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7f61ee96f620>)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.84210872042412
+--------------------------------------80.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.84210872042412
+--------------------------------------90.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-84.71087376600569
+--------------------------------------90.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.59661956392277
+--------------------------------------90.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7f61ee96f620>)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.65526127977034
+--------------------------------------90.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-83.64132546292412
+
+
+With Diabetes dataset: 
+
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6167.3882902113055
+--------------------------------------60.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6191.002168740433
+--------------------------------------60.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6052.437208725124
+--------------------------------------60.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7ff5eba07620>)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6058.434868567134
+--------------------------------------60.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6171.518515716423
+--------------------------------------70.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6122.292379233298
+--------------------------------------70.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 3, 'estimator__kernel': 'rbf'}
+-6050.0105646697375
+--------------------------------------70.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7ff5eba07620>)
+{'estimator__C': 10, 'estimator__epsilon': 3, 'estimator__kernel': 'rbf'}
+-6044.940414831984
+--------------------------------------70.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6171.518515716423
+--------------------------------------80.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6116.574244010505
+--------------------------------------80.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6058.786694667448
+--------------------------------------80.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7ff5eba07620>)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6060.1935881872
+--------------------------------------80.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6171.518515716423
+--------------------------------------90.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
+          eigen_solver=None, eigen_tol=0.0, gamma=1.0, kernel_params=None,
+          n_clusters=8, n_init=10, n_jobs=1, n_neighbors=10,
+          random_state=None)
+{'estimator__C': 10, 'estimator__epsilon': 3, 'estimator__kernel': 'rbf'}
+-6096.420201261638
+--------------------------------------90.0% KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+    n_clusters=8, n_init=10, n_jobs=1, precompute_distances='auto',
+    random_state=None, tol=0.0001, verbose=0)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6050.4856212635605
+--------------------------------------90.0% AgglomerativeClustering(affinity='euclidean', compute_full_tree='auto',
+            connectivity=None, linkage='ward', memory=None, n_clusters=2,
+            pooling_func=<function mean at 0x7ff5eba07620>)
+{'estimator__C': 10, 'estimator__epsilon': 2.5, 'estimator__kernel': 'rbf'}
+-6047.358817000739
+--------------------------------------90.0% Birch(branching_factor=50, compute_labels=True, copy=True, n_clusters=3,
+   threshold=0.5)
+{'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
+-6171.518515716423
