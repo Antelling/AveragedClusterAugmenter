@@ -1,3 +1,5 @@
+With Boston dataset: 
+
 {'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
 -87.2314558184986
 --------------------------------------60.0% SpectralClustering(affinity='rbf', assign_labels='kmeans', coef0=1, degree=3,
@@ -82,6 +84,7 @@
 -83.64132546292412
 
 
+With Diabetes dataset: 
 
 {'estimator__C': 10, 'estimator__epsilon': 0.5, 'estimator__kernel': 'rbf'}
 -6167.3882902113055
