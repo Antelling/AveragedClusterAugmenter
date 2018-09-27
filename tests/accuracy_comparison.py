@@ -1,20 +1,21 @@
-from sklearn.datasets import load_boston, load_breast_cancer, load_diabetes, load_linnerud, load_iris
-from sklearn.multioutput import MultiOutputRegressor
-from sklearn.svm import SVR, SVC
+from sklearn.datasets import load_boston as load
+from sklearn.svm import SVR
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
-import numpy as np
+from numpy import mean
 from ACA import ACATransformer
 from sklearn import cluster
 from sklearn.base import clone
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
 
-# lets start with regression
 
+X_train, X_test, y_train, y_test = train_test_split(*load(return_X_y=True))
 
 def score(estimator, new_X, new_y):
     estimator.fit(new_X, new_y)
-    predictions = estimator.predict(X)
-    error = np.mean((predictions - y) ** 2)
+    predictions = estimator.predict(X_test)
+    error = mean((predictions - y_test) ** 2)
     return -error
 
 pipeline = Pipeline([
@@ -27,24 +28,22 @@ params = {
     "estimator__kernel": ["rbf"],
 }
 
-for l in load_boston, load_diabetes:
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    X, y = l(return_X_y=True)
+print(score(RandomForestRegressor(), X_train, y_train))
 
-    grid_cv = GridSearchCV(clone(pipeline), param_grid=params, scoring=score)
-    grid_cv.fit(X, y)
-    print(grid_cv.best_params_)
-    print(grid_cv.best_score_)
+#get accuracy with no preprocessing step
+grid_cv = GridSearchCV(clone(pipeline), param_grid=params, scoring=score)
+grid_cv.fit(X_train, y_train)
+print(grid_cv.best_params_)
+print(grid_cv.best_score_)
 
-    for percentage in [.6, .7, .8, .9]:
-        for clusterer in [cluster.SpectralClustering(), cluster.KMeans(), cluster.AgglomerativeClustering(), cluster.Birch()]:
-            print("--------------------------------------" + str(percentage * 100) + "% " + str(clusterer))
-            simplifier = ACATransformer(percentage=percentage, clusterer=clusterer)
-            new_X, new_y = simplifier.fit_transform(X, y)
+#test different preprocessing parameters
+for percentage in [.6, .7, .8, .9]:
+    for clusterer in [cluster.SpectralClustering(), cluster.KMeans(), cluster.AgglomerativeClustering(), cluster.Birch()]:
+        print("--------------------------------------" + str(percentage * 100) + "% " + str(clusterer))
+        simplifier = ACATransformer(percentage=percentage, clusterer=clusterer)
+        new_X, new_y = simplifier.fit_transform(X_train, y_train)
 
-            grid_cv = GridSearchCV(clone(pipeline), param_grid=params, scoring=score)
-            grid_cv.fit(new_X, new_y)
-            print(grid_cv.best_params_)
-            print(grid_cv.best_score_)
+        grid_cv = GridSearchCV(clone(pipeline), param_grid=params, scoring=score)
+        grid_cv.fit(new_X, new_y)
+        print(grid_cv.best_params_)
+        print(grid_cv.best_score_)
