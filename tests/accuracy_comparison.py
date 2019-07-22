@@ -28,6 +28,7 @@ params = {
     "estimator__kernel": ["rbf"],
 }
 
+#compare to random forest model
 print(score(RandomForestRegressor(), X_train, y_train))
 
 #get accuracy with no preprocessing step
